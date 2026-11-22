@@ -1,6 +1,8 @@
 ---
-name: designing-anti-slop-ui
+name: anti-slop-formwork
 description: Use when building, redesigning, or reviewing web UI, dashboards, charts, login or settings pages, React components, or Tailwind CSS design systems where output risks looking like generic AI templates or SaaS card slop.
+user-invocable: true
+argument-hint: "[component, page, or dashboard task]"
 ---
 
 # Designing Anti-Slop UI
@@ -8,6 +10,8 @@ description: Use when building, redesigning, or reviewing web UI, dashboards, ch
 ## Overview
 
 Design calm, tactile web interfaces combining fluid precision and editorial restraint across OKLCH color harmony, Macro-Meso-Micro layouts, concentric cornering, Tufte dataviz, compositor-safe springs, and Tailwind CSS v4 tokens.
+
+When invoked via `/anti-slop-formwork` with `$ARGUMENTS`, apply the six-pillar contract below to that target.
 
 ## New-Project Bootstrap
 

@@ -4,13 +4,19 @@ Formwork pairs an opinionated UI design system (OKLCH color harmony, Macro-Meso-
 
 ## Use This Skill with Any AI Agent
 
-Install `designing-anti-slop-ui` directly from GitHub into Claude Code, Cursor, Codex, OpenCode, or Antigravity:
+Install `anti-slop-formwork` directly from GitHub into Claude Code, Cursor, Codex, OpenCode, or Antigravity:
 
 ```bash
 npx skills add bahawww/formwork-ui
 ```
 
-Or copy the self-contained skill folder (`skills/designing-anti-slop-ui/`) into your repository's `.agents/skills/` or `.claude/skills/` directory. The skill includes:
+Invoke it explicitly as a slash command in your agent session, or let the agent load it automatically for UI work:
+
+```text
+/anti-slop-formwork build a SaaS analytics dashboard
+```
+
+Or copy the self-contained skill folder (`skills/anti-slop-formwork/`) into your repository's `.agents/skills/` or `.claude/skills/` directory. The skill includes:
 
 - `SKILL.md`: compact 6-pillar contract plus red-flag guardrails (`<= 500` words)
 - `references/`: deep specifications for OKLCH colors, layout/spacing/corners, spring motion, Tufte dataviz, and WCAG AA critique

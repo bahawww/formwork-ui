@@ -51,7 +51,7 @@ function scanNonSemanticClicks(file) {
 
 const emDashRule = { name: 'no-em-dash', regex: /\u2014/ };
 const srcFiles = walkFiles(path.join(ROOT, 'src'));
-const skillFiles = walkFiles(path.join(ROOT, 'skills/designing-anti-slop-ui'));
+const skillFiles = walkFiles(path.join(ROOT, 'skills/anti-slop-formwork'));
 
 const docFiles = [
   path.join(ROOT, 'AGENTS.md'),
@@ -65,7 +65,7 @@ for (const file of docFiles) {
   }
 }
 
-const skillEntry = path.join(ROOT, 'skills/designing-anti-slop-ui/SKILL.md');
+const skillEntry = path.join(ROOT, 'skills/anti-slop-formwork/SKILL.md');
 if (fs.existsSync(skillEntry)) {
   const words = fs.readFileSync(skillEntry, 'utf8').trim().split(/\s+/).filter(Boolean).length;
   if (words > 500) {

@@ -7,7 +7,7 @@ Every component, dashboard, chart, and template follows fluid precision and edit
 - **No em dashes (`U+2014`).** Never write an em dash anywhere in UI copy, metadata, comments, or docs. Use commas, colons, or periods instead.
 - **60-30-10 OKLCH palette & harmony.** Use tinted neutral grounds (`--color-bg`, `--color-surface`) for 60%, ink and 1px hairlines for 30%, and reserve `--color-accent` (`--accent-hue`) for focus rings, selection, active handles, and signature motion. Maintain `Delta L >= 0.50` contrast in both `:root` and `.dark`.
 
-Before designing, building, or modifying any UI component, page, chart, or visual surface, load `skills/designing-anti-slop-ui/SKILL.md` (symlinked at `.agents/skills/designing-anti-slop-ui/SKILL.md` and `.claude/skills/designing-anti-slop-ui/SKILL.md`) and its topic references inside `references/`.
+Before designing, building, or modifying any UI component, page, chart, or visual surface, load `skills/anti-slop-formwork/SKILL.md` (symlinked at `.agents/skills/anti-slop-formwork/SKILL.md` and `.claude/skills/anti-slop-formwork/SKILL.md`) and its topic references inside `references/`.
 
 ## Color Palette, Harmony & Tailwind CSS v4 (`color-and-tokens.md`)
 

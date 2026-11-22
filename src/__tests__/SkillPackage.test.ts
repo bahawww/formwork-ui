@@ -5,15 +5,18 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 const ROOT = process.cwd();
-const SKILL_DIR = path.join(ROOT, 'skills', 'designing-anti-slop-ui');
+const SKILL_DIR = path.join(ROOT, 'skills', 'anti-slop-formwork');
 const CHECKER_SCRIPT = path.join(SKILL_DIR, 'scripts', 'check-rules.mjs');
 
-describe('Portable designing-anti-slop-ui skill package', () => {
+describe('Portable anti-slop-formwork skill package', () => {
   it('provides valid frontmatter, word budget <= 500, zero em dashes, and all linked assets/references', () => {
     const skillMdPath = path.join(SKILL_DIR, 'SKILL.md');
     const content = fs.readFileSync(skillMdPath, 'utf8');
 
-    expect(content).toMatch(/^---\nname: designing-anti-slop-ui\ndescription: Use when /);
+    expect(content).toMatch(/^---\nname: anti-slop-formwork\ndescription: Use when /);
+    expect(content).toContain('user-invocable: true');
+    expect(content).toContain('argument-hint:');
+    expect(content).toContain('$ARGUMENTS');
     expect(content).not.toContain('\u2014');
 
     const words = content.trim().split(/\s+/).filter(Boolean).length;
@@ -36,8 +39,8 @@ describe('Portable designing-anti-slop-ui skill package', () => {
       expect(content).toContain(rel);
     }
 
-    expect(fs.existsSync(path.join(ROOT, '.agents', 'skills', 'designing-anti-slop-ui', 'SKILL.md'))).toBe(true);
-    expect(fs.existsSync(path.join(ROOT, '.claude', 'skills', 'designing-anti-slop-ui', 'SKILL.md'))).toBe(true);
+    expect(fs.existsSync(path.join(ROOT, '.agents', 'skills', 'anti-slop-formwork', 'SKILL.md'))).toBe(true);
+    expect(fs.existsSync(path.join(ROOT, '.claude', 'skills', 'anti-slop-formwork', 'SKILL.md'))).toBe(true);
     expect(fs.existsSync(path.join(ROOT, 'CLAUDE.md'))).toBe(true);
   });
 
