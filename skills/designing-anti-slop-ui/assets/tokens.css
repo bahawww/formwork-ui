@@ -1,0 +1,244 @@
+@import 'tailwindcss' source("../");
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-glass: var(--glass);
+  --color-glass-strong: var(--glass-strong);
+  --color-glass-border: var(--glass-border);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-error: var(--error);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+
+  --color-surface-accent: var(--surface-accent);
+  --color-surface-success: var(--surface-success);
+  --color-surface-warning: var(--surface-warning);
+  --color-surface-error: var(--surface-error);
+  --color-surface-info: var(--surface-info);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-chart-neutral: var(--chart-neutral);
+
+  --color-harmony-analog-prev: var(--harmony-analog-prev);
+  --color-harmony-analog-next: var(--harmony-analog-next);
+  --color-harmony-split-a: var(--harmony-split-a);
+  --color-harmony-split-b: var(--harmony-split-b);
+  --color-harmony-comp: var(--harmony-comp);
+
+  --color-preset-indigo: var(--preset-indigo);
+  --color-preset-cobalt: var(--preset-cobalt);
+  --color-preset-teal: var(--preset-teal);
+  --color-preset-emerald: var(--preset-emerald);
+  --color-preset-amber: var(--preset-amber);
+
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  --font-sans: var(--font-sans-stack);
+  --font-mono: var(--font-mono-stack);
+}
+
+:root {
+  color-scheme: light;
+
+  --accent-hue: 268;
+
+  --bg: oklch(0.985 0.003 264);
+  --surface: oklch(0.968 0.004 264);
+  --surface-2: oklch(0.938 0.006 264);
+  --glass: color-mix(in oklch, oklch(0.985 0.003 264) 78%, transparent);
+  --glass-strong: color-mix(in oklch, oklch(0.992 0.002 264) 88%, transparent);
+  --glass-border: color-mix(in oklch, oklch(0.205 0.008 264) 10%, transparent);
+  --fg: oklch(0.205 0.008 264);
+  --muted: oklch(0.47 0.008 264);
+  --subtle: oklch(0.53 0.007 264);
+  --border: oklch(0.885 0.006 264);
+  --border-strong: oklch(0.805 0.009 264);
+
+  --accent: oklch(0.54 0.16 var(--accent-hue));
+  --accent-fg: oklch(0.985 0.003 264);
+  --error: oklch(0.55 0.19 26);
+  --success: oklch(0.54 0.15 152);
+  --warning: oklch(0.60 0.14 78);
+  --info: oklch(0.55 0.14 238);
+
+  --surface-accent: color-mix(in oklch, var(--accent) 11%, transparent);
+  --surface-success: color-mix(in oklch, var(--success) 11%, transparent);
+  --surface-warning: color-mix(in oklch, var(--warning) 12%, transparent);
+  --surface-error: color-mix(in oklch, var(--error) 11%, transparent);
+  --surface-info: color-mix(in oklch, var(--info) 11%, transparent);
+
+  --chart-1: var(--accent);
+  --chart-2: oklch(0.55 0.14 192);
+  --chart-3: oklch(0.58 0.14 72);
+  --chart-4: oklch(0.54 0.15 318);
+  --chart-5: oklch(0.55 0.14 150);
+  --chart-neutral: oklch(0.64 0.01 264);
+
+  --harmony-analog-prev: oklch(0.56 0.14 calc(var(--accent-hue) - 32));
+  --harmony-analog-next: oklch(0.56 0.14 calc(var(--accent-hue) + 32));
+  --harmony-split-a: oklch(0.56 0.14 calc(var(--accent-hue) + 150));
+  --harmony-split-b: oklch(0.56 0.14 calc(var(--accent-hue) + 210));
+  --harmony-comp: oklch(0.56 0.14 calc(var(--accent-hue) + 180));
+
+  --preset-indigo: oklch(0.54 0.16 268);
+  --preset-cobalt: oklch(0.54 0.16 245);
+  --preset-teal: oklch(0.54 0.14 192);
+  --preset-emerald: oklch(0.54 0.15 156);
+  --preset-amber: oklch(0.58 0.15 68);
+
+  --color-backdrop: rgb(0 0 0 / 0.24);
+  --color-login-glow: radial-gradient(
+    60% 50% at 50% 0%,
+    color-mix(in oklch, var(--accent) 9%, transparent),
+    transparent 72%
+  );
+
+  --blur-sm: 8px;
+  --blur-md: 16px;
+  --blur-lg: 24px;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06);
+  --shadow-md: 0 10px 30px -8px rgb(0 0 0 / 0.12);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  --motion-dur-instant: 50ms;
+  --motion-dur-fast: 120ms;
+  --motion-dur-base: 200ms;
+  --motion-dur-slow: 320ms;
+  --motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --font-sans-stack: 'Geist', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono-stack: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.dark,
+html.dark,
+:root.dark {
+  color-scheme: dark;
+
+  --bg: oklch(0.145 0.006 264);
+  --surface: oklch(0.185 0.007 264);
+  --surface-2: oklch(0.235 0.008 264);
+  --glass: color-mix(in oklch, oklch(0.155 0.006 264) 76%, transparent);
+  --glass-strong: color-mix(in oklch, oklch(0.185 0.007 264) 86%, transparent);
+  --glass-border: color-mix(in oklch, oklch(0.96 0.004 264) 10%, transparent);
+  --fg: oklch(0.955 0.004 264);
+  --muted: oklch(0.72 0.008 264);
+  --subtle: oklch(0.64 0.008 264);
+  --border: oklch(0.285 0.008 264);
+  --border-strong: oklch(0.37 0.010 264);
+
+  --accent: oklch(0.72 0.13 var(--accent-hue));
+  --accent-fg: oklch(0.145 0.006 264);
+  --error: oklch(0.72 0.16 24);
+  --success: oklch(0.74 0.14 152);
+  --warning: oklch(0.77 0.13 82);
+  --info: oklch(0.74 0.12 238);
+
+  --surface-accent: color-mix(in oklch, var(--accent) 14%, transparent);
+  --surface-success: color-mix(in oklch, var(--success) 14%, transparent);
+  --surface-warning: color-mix(in oklch, var(--warning) 14%, transparent);
+  --surface-error: color-mix(in oklch, var(--error) 14%, transparent);
+  --surface-info: color-mix(in oklch, var(--info) 14%, transparent);
+
+  --chart-1: var(--accent);
+  --chart-2: oklch(0.74 0.12 192);
+  --chart-3: oklch(0.77 0.12 76);
+  --chart-4: oklch(0.73 0.12 318);
+  --chart-5: oklch(0.74 0.12 150);
+  --chart-neutral: oklch(0.52 0.01 264);
+
+  --harmony-analog-prev: oklch(0.72 0.12 calc(var(--accent-hue) - 32));
+  --harmony-analog-next: oklch(0.72 0.12 calc(var(--accent-hue) + 32));
+  --harmony-split-a: oklch(0.72 0.12 calc(var(--accent-hue) + 150));
+  --harmony-split-b: oklch(0.72 0.12 calc(var(--accent-hue) + 210));
+  --harmony-comp: oklch(0.72 0.12 calc(var(--accent-hue) + 180));
+
+  --preset-indigo: oklch(0.72 0.13 268);
+  --preset-cobalt: oklch(0.72 0.13 245);
+  --preset-teal: oklch(0.74 0.12 192);
+  --preset-emerald: oklch(0.74 0.12 156);
+  --preset-amber: oklch(0.77 0.13 68);
+
+  --color-backdrop: rgb(0 0 0 / 0.56);
+  --color-login-glow: radial-gradient(
+    60% 50% at 50% 0%,
+    color-mix(in oklch, var(--accent) 12%, transparent),
+    transparent 72%
+  );
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
+  --shadow-md: 0 14px 36px -8px rgb(0 0 0 / 0.55);
+}
+
+.squircle {
+  border-radius: 9999px;
+  corner-shape: squircle;
+}
+
+.squircle-corners {
+  corner-shape: squircle;
+}
+
+.glass-bar {
+  background-color: var(--color-glass);
+  backdrop-filter: blur(var(--blur-md)) saturate(160%);
+  -webkit-backdrop-filter: blur(var(--blur-md)) saturate(160%);
+  border-color: var(--color-glass-border);
+}
+
+.glass-surface {
+  background-color: var(--color-glass-strong);
+  backdrop-filter: blur(var(--blur-lg)) saturate(150%);
+  -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(150%);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-md);
+}
+
+.glass-backdrop {
+  background-color: var(--color-backdrop);
+  backdrop-filter: blur(var(--blur-sm));
+  -webkit-backdrop-filter: blur(var(--blur-sm));
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass-bar,
+  .glass-surface,
+  .glass-backdrop {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .glass-bar,
+  .glass-surface {
+    background-color: var(--color-bg);
+  }
+}
