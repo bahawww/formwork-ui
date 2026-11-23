@@ -37,6 +37,17 @@ When invoked via `/anti-slop-formwork` with `$ARGUMENTS`, apply the six-pillar c
 6. **Typography, A11y & Prose (`references/audit-and-critique-checklist.md`):**
    - Use regular `400` weight only, zero em dashes (`U+2014`), plain verb-matched copy, semantic `<button>`/`<a>`/`<input>`, `>= 44px` hit targets, and `useFocusTrap`.
 
+## Focus, Framing & Reveal (Cross-Pillar, `references/focus-framing-and-reveal.md`)
+
+Decided before the pillars are tuned, applied across all six:
+
+- **One idea per view:** name the focal object first; everything else is a satellite and must look like one. A hero carries one idea (one countdown, one number, one chart), stripped of grid clutter, metadata footers, and duplicate links.
+- **Five failure modes:** too much (real text in every cell), wireframe (stripped of what made it recognisable), boxed (a whole panel shrunk into a bordered card), flat (every object the same weight), bland (the brief's style never shows up). Check every layout against all five.
+- **Framing:** decide the crop first, chrome appears once per view, satellites may straddle the hero's edge instead of stacking, and a bento grid is one picture (only a third to a half of the tiles show UI, no two adjacent tiles of the same kind).
+- **Budgets:** one accent for interactive meaning, one colour moment per view, one dominant number or headline; repeated status text appears exactly once.
+- **Reveal:** cards stay clean at rest (preview, title, one quiet badge); metadata and actions live in a hover or focus pill bar. Loading is a skeleton of the same geometry.
+- **Motion has a cause:** every animation answers a named event; rehearse frame by frame and at phone width (a redesign, not a squeeze) before shipping.
+
 ## Red Flags (Fix Immediately)
 
-Never ship `font-medium`/`font-semibold`/`font-bold`/`<strong>`, `shadow-lg`/`xl`/`2xl`, multi-slice pie charts, clickable `<div>`/`<span>`/`<tr>`, `transition-all` or `width`/`height` transitions, or raw hex/palette classes in components.
+Never ship `font-medium`/`font-semibold`/`font-bold`/`<strong>`, `shadow-lg`/`xl`/`2xl`, multi-slice pie charts, clickable `<div>`/`<span>`/`<tr>`, `transition-all` or `width`/`height` transitions, or raw hex/palette classes in components. Never ship a wall of equal-weight cards, a panel boxed inside a card inside a card, more than one accent colour in a view, or an animation nothing caused.

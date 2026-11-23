@@ -25,7 +25,17 @@ Reuse these owned components before inventing custom one-off markup:
 - **Operable:** Top skip link (`#main-content`), semantic `<button>`/`<a>`/`<input>` everywhere (never clickable `<div>`/`<span>` or `<tr onClick>`), roving arrow keys in tablists/radiogroups, `>= 44px` hit targets, `useFocusTrap` in portals.
 - **Understandable & Robust:** `<label>` on every field, inline error recovery messages, `aria-live="polite"` feedback, clean wrapping and overflow control down to `320px`.
 
-## 4. Automated Finish Gate
+## 4. Focus, Framing & Reveal Audit (`references/focus-framing-and-reveal.md`)
+
+- **One idea:** Can the focal object be named in one phrase? Does the hero carry exactly one idea, with no grid clutter, metadata footer, or duplicate link competing with it?
+- **Weight ladder:** At most three visual weight levels (hero, satellite, hairline list)? No two adjacent sections at the same weight by accident, and no wall of equal-weight cards?
+- **Five failure modes:** Checked against too much, wireframe, boxed, flat, and bland, with the fix applied, not just noted?
+- **Framing:** Crop decided before content, chrome appears once, satellites straddle or butt against the hero instead of stacking in even rows, bento reads as one picture (a third to a half of tiles show UI, no adjacent same-kind tiles)?
+- **Budgets:** Exactly one accent and one colour moment in the view, one dominant number or headline, and any repeated status sentence appears exactly once?
+- **Reveal:** Card faces clean at rest (preview, title, one quiet badge), with metadata and actions only in the hover or focus pill bar, and loading shown as a skeleton of the same geometry?
+- **Motion cause:** Every animation names its triggering event, moved objects travel instead of fading, loops end where they began, and the sequence was rehearsed frame by frame plus at phone width?
+
+## 5. Automated Finish Gate
 
 - Zero em dashes (`U+2014`), zero middle dots (`U+00B7`), zero CTA arrows (`U+2192`), zero `transition: all` or layout transitions (`width`, `height`, `margin`, `padding`, `top`, `left`), zero `shadow-lg`/`xl`/`2xl`, zero `bg-[var(...)]` or raw palette shades, zero `as` casts or `console.log`.
 - Run and verify exit `0`: `npm run check:rules && npm run typecheck && npm test && npm run build`.
