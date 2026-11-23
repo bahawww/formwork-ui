@@ -35,7 +35,17 @@ Reuse these owned components before inventing custom one-off markup:
 - **Reveal:** Card faces clean at rest (preview, title, one quiet badge), with metadata and actions only in the hover or focus pill bar, and loading shown as a skeleton of the same geometry?
 - **Motion cause:** Every animation names its triggering event, moved objects travel instead of fading, loops end where they began, and the sequence was rehearsed frame by frame plus at phone width?
 
-## 5. Automated Finish Gate
+## 5. Ban List, Allowance & Proof Audit (`references/ban-list-allowance-and-proof.md`)
+
+- **Rules file read:** Was the project rules file (Never and Always lists) opened before the UI was touched, and does every new tell found in this draft get added to it as a new line with its reason?
+- **Tells scan:** Draft scanned top to bottom against the recurring tells: gradients or gradient text, glow, sparkle emoji headline, all caps eyebrow labels, buzzword copy, three feature cards with icons in circles, avatar stacks fanning on hover, coloured bar on a selected row, decorative 01 02 03 numbering, green check in a circle per status, letter in a rounded square logos?
+- **Allowance sheet:** Every colour a named semantic token, every size on the one type scale, every radius in the set, and nothing used that is not on the sheet (or the sheet was extended first, with the role named)?
+- **Starting point:** Was the build started from real components, the project's best screens, or reference screenshots, rather than from a blank page?
+- **Frequency ladder:** Keyboard highlights instant, press 100ms, menu close 140ms, hover 150ms, menu open 200ms, panel change at most 300ms with no bounce, and no 600ms fade plus stagger anywhere?
+- **Proof loop:** Screenshots taken and checked in light, dark, and phone width (390px), including the production build, with findings fixed and the loop rerun before done was claimed?
+- **Deletion pass:** A final cutting pass actually removed something (repeated subtitle, unrequested badge, second shadow, icon beside every label), or can name why each candidate earned its place?
+
+## 6. Automated Finish Gate
 
 - Zero em dashes (`U+2014`), zero middle dots (`U+00B7`), zero CTA arrows (`U+2192`), zero `transition: all` or layout transitions (`width`, `height`, `margin`, `padding`, `top`, `left`), zero `shadow-lg`/`xl`/`2xl`, zero `bg-[var(...)]` or raw palette shades, zero `as` casts or `console.log`.
 - Run and verify exit `0`: `npm run check:rules && npm run typecheck && npm test && npm run build`.

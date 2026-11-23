@@ -26,7 +26,23 @@ Use physically tuned springs in `motion/react` so rapid user clicks mid-animatio
 - **Exit 20% faster than enter:** Dismissing a dialog or toast exits slightly brisker than entering so attention returns immediately to content.
 - **Easing:** Use `cubic-bezier(0.22, 1, 0.36, 1)` (`ease-out`) for entrances and responses; `cubic-bezier(0.65, 0, 0.35, 1)` (`ease-in-out`) for crossfade state swaps; never use `ease-in` for UI entrances.
 
-## 4. GPU-Only Properties & Layout Stability
+## 4. Frequency Ladder (Per-Element Budgets)
+
+The more often something happens, the less it animates. Frequent actions earn near-zero motion; rare ones may take the full budget:
+
+| Element | Budget |
+| :--- | :--- |
+| Keyboard highlight move | Instant, 0ms (only the mouse gets the glide) |
+| Button press (`scale: 0.97`) | 100ms |
+| Menu closes | 140ms |
+| Hover response | 150ms |
+| Menu opens | 200ms |
+| Panel or height change | 300ms maximum, no bounce |
+
+- The typical generated default, a 600ms fade with stagger layered on top, is an anti-pattern: name it in review and reject it.
+- Write these numbers into the project rules file so they survive across sessions, instead of asking for "smooth" and receiving 800ms ease-in-out.
+
+## 5. GPU-Only Properties & Layout Stability
 
 - **Compositor allowlist:** Animate ONLY `transform` (`translate`, `scale`, `rotate`), `opacity`, `clip-path`, and `filter` (plus fast border/color state fades).
 - **Banned properties:** NEVER write `transition: all`, `transition-all`, or animate layout metrics (`width`, `height`, `margin`, `padding`, `top`, `left`). For progress meters, animate `transform: scaleX(...)` with `origin-left` instead of `width`!
