@@ -79,10 +79,8 @@ const generalSrcRules = [
 ];
 
 const nonTestSrcRules = [
-  { name: 'no-bold-weight', regex: /font-weight\s*:\s*(?:[7-9]\d{2}|bold|bolder)\b/i },
-  { name: 'no-thin-weight', regex: /font-weight\s*:\s*(?:[1-3]00|lighter)\b/i },
-  { name: 'no-bold-style', regex: /fontWeight\s*:\s*['"]?(?:[7-9]\d{2}|bold)\b/ },
-  { name: 'no-thin-style', regex: /fontWeight\s*:\s*['"]?[1-3]00\b/ },
+  { name: 'no-raw-font-weight', regex: /(?<!-)font-weight\s*:\s*(?:[1-9]00|bold|bolder|lighter|normal)\b/i },
+  { name: 'no-raw-font-weight-style', regex: /fontWeight\s*:\s*['"]?(?:[1-9]00|bold|normal)\b/ },
   { name: 'no-strong-or-b-tag', regex: /<\/?(?:strong|b)(?:\s|>)/ },
   { name: 'no-middle-dot', regex: /\u00b7/ },
   { name: 'no-cta-arrow', regex: /\u2192/ },
@@ -108,8 +106,7 @@ const componentColorAndTwRules = [
   },
   { name: 'no-hardcoded-rgb', regex: /\brgba?\s*\(/i },
   { name: 'no-hardcoded-oklch', regex: /\boklch\s*\(/i },
-  { name: 'no-tw-bold', regex: /\bfont-(?:bold|extrabold|black)\b/ },
-  { name: 'no-tw-thin', regex: /\bfont-(?:thin|extralight|light)\b/ },
+  { name: 'no-raw-tw-weight', regex: /\bfont-(?:thin|extralight|light|normal|medium|semibold|bold|extrabold|black)\b/ },
   { name: 'no-tw-v3-var-syntax', regex: /\b(?:bg|text|border|ring|fill|stroke|duration|ease)-\[var\(/ },
   {
     name: 'no-tw-raw-palette',

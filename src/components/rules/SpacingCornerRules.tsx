@@ -31,7 +31,7 @@ export function SpacingCornerRules() {
       <section className="flex flex-col gap-5 rounded-lg squircle-corners border border-(--color-border) bg-(--color-bg) p-5">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
-            <h2 className="m-0 text-[16px] font-medium text-(--color-fg)">
+            <h2 className="m-0 text-[16px] font-title text-(--color-fg)">
               Interactive concentric cornering calculator
             </h2>
             <p className="m-0 mt-1 max-w-[66ch] text-[13px] text-(--color-muted)">
@@ -100,7 +100,7 @@ export function SpacingCornerRules() {
       </section>
 
       <section className="flex flex-col gap-3 rounded-lg squircle-corners border border-(--color-border) bg-(--color-bg) p-5">
-        <h3 className="m-0 text-[15px] font-medium text-(--color-fg)">
+        <h3 className="m-0 text-[15px] font-title text-(--color-fg)">
           4px/8px grid & Law of Proximity
         </h3>
         <p className="m-0 text-[13px] text-(--color-muted)">
@@ -128,10 +128,10 @@ export function SpacingCornerRules() {
         <table className="w-full border-collapse text-[13px]">
           <thead>
             <tr className="border-b border-(--color-border) bg-(--color-surface)">
-              <th className="px-4 py-3 text-start font-normal text-(--color-muted)">Dashboard surface</th>
-              <th className="px-4 py-3 text-start font-normal text-(--color-muted)">Padding</th>
-              <th className="px-4 py-3 text-start font-normal text-(--color-muted)">Radius rule</th>
-              <th className="px-4 py-3 text-start font-normal text-(--color-muted)">Internal gap</th>
+              <th className="px-4 py-3 text-start font-body text-(--color-muted)">Dashboard surface</th>
+              <th className="px-4 py-3 text-start font-body text-(--color-muted)">Padding</th>
+              <th className="px-4 py-3 text-start font-body text-(--color-muted)">Radius rule</th>
+              <th className="px-4 py-3 text-start font-body text-(--color-muted)">Internal gap</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-(--color-border)">

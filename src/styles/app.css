@@ -13,7 +13,7 @@
     color: var(--color-fg);
     font-family: var(--font-sans);
     font-size: 14px;
-    font-weight: 400;
+    font-weight: var(--font-weight-body);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
@@ -28,7 +28,7 @@
   select,
   textarea {
     font: inherit;
-    font-weight: 400;
+    font-weight: var(--font-weight-body);
     color: inherit;
   }
 

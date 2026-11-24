@@ -40,7 +40,7 @@ export function SettingsTemplate() {
     <div className="rounded-xl squircle-corners border border-(--color-border) bg-(--color-bg)">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-(--color-border) px-6 py-5">
         <div>
-          <h3 className="m-0 text-[16px] font-medium text-(--color-fg)">Workspace settings</h3>
+          <h3 className="m-0 text-[16px] font-title text-(--color-fg)">Workspace settings</h3>
           <p className="m-0 mt-1 text-[13px] text-(--color-muted)">
             Two-column editorial form: labels stay calm on the left while controls stack cleanly on the right.
           </p>

@@ -42,7 +42,7 @@ export function NavigationAndOverlaysSection() {
   return (
     <section className="flex flex-col gap-5" aria-label="Navigation and overlays">
       <div>
-        <h2 className="m-0 text-[18px] font-medium text-(--color-fg)">Navigation and frosted overlays</h2>
+        <h2 className="m-0 text-[18px] font-title text-(--color-fg)">Navigation and frosted overlays</h2>
         <p className="m-0 mt-1 text-[13px] text-(--color-muted)">
           Breadcrumbs, spring-pill tabs, dropdown actions, focus-trapped slide-over drawers, and command palettes.
         </p>

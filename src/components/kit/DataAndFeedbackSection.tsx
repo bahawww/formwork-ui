@@ -70,7 +70,7 @@ export function DataAndFeedbackSection() {
   return (
     <section className="flex flex-col gap-5" aria-label="Data display and state feedback">
       <div>
-        <h2 className="m-0 text-[18px] font-medium text-(--color-fg)">Data display, indicators, and states</h2>
+        <h2 className="m-0 text-[18px] font-title text-(--color-fg)">Data display, indicators, and states</h2>
         <p className="m-0 mt-1 text-[13px] text-(--color-muted)">
           Hairline metric strips, sortable tables, GPU-composited progress bars, alert banners, and skeleton fallbacks.
         </p>

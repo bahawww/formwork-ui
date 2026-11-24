@@ -5,7 +5,7 @@ Run through every axis before marking any web UI task complete.
 ## 1. Design Critique (5 Axes)
 
 - **2-second impression:** Is the primary action or metric insight obvious without marketing fluff or decorative boxes?
-- **Visual hierarchy:** Does reading order flow via type scale, OKLCH neutral contrast (`fg` -> `muted` -> `subtle`), and 4px-grid space with the three-weight ladder: `400` body, `500` (`font-medium`) titles and buttons, `600` (`font-semibold`) page titles and KPI figures only (zero thin `100`-`300` or heavy `700+` weights, `font-light`/`font-bold`/`font-black`, or `<strong>`)?
+- **Visual hierarchy:** Does reading order flow via type scale, OKLCH neutral contrast (`fg` -> `muted` -> `subtle`), and 4px-grid space with the weight tokens: `font-body` (`500`) body, `font-title` (`600`) titles and buttons, `font-figure` (`700`) page titles and KPI figures only (zero raw `font-*` weight utilities, literal `font-weight` numbers, or `<strong>`)?
 - **Concentric geometry & blur:** Do nested radii follow `R_inner = max(4px, R_outer - padding - border)`? Is frosted blur confined to `.glass-bar` (`16px`), `.glass-surface` (`24px`), and `.glass-backdrop` (`8px`) with `prefers-reduced-transparency` fallback?
 - **Restraint:** Can at least one redundant wrapper, drop shadow, card border, or eyebrow label be deleted?
 - **Parity:** Checked across light (`:root`) and dark (`.dark`), accent hue presets, and `320px`, `768px`, `1024px`, `1440px`?

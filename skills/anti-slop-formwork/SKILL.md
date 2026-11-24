@@ -35,7 +35,7 @@ Invoked via `/anti-slop-formwork` with `$ARGUMENTS`: apply the six-pillar contra
 5. **Spring Motion (`references/motion-and-animation.md`):**
    - One signature spring (`fast`, `press`, `moderate`, `settle`), `< 300ms` (exits 20% faster), animate ONLY `transform`, `opacity`, `clip-path`, `filter`, check `useReducedMotion()`.
 6. **Typography, A11y & Prose (`references/audit-and-critique-checklist.md`):**
-   - Use the `400`/`500`/`600` weight ladder (body, titles, KPI figures), zero em dashes (`U+2014`), plain verb-matched copy, semantic `<button>`/`<a>`/`<input>`, `>= 44px` hit targets, and `useFocusTrap`.
+   - Use weight tokens `font-body`/`font-title`/`font-figure` (500/600/700), zero em dashes (`U+2014`), plain verb-matched copy, semantic `<button>`/`<a>`/`<input>`, `>= 44px` hit targets, and `useFocusTrap`.
 
 ## Focus & Framing (`references/focus-framing-and-reveal.md`)
 
@@ -47,4 +47,4 @@ Bans beat praise. Closed token allowance only, never start from zero, motion fre
 
 ## Red Flags (Fix Immediately)
 
-Never ship `font-light`/`font-bold`/`font-black`/`<strong>`, `shadow-lg`/`xl`/`2xl`, multi-slice pie charts, clickable `<div>`/`<span>`/`<tr>`, `transition-all` or `width`/`height` transitions, or raw hex/palette classes, or the five failure modes above. Never ship gradient text, glow, buzzword copy, all caps eyebrow labels, or unproven done claims.
+Never ship raw `font-*` weights or `<strong>`, `shadow-lg`/`xl`/`2xl`, multi-slice pie charts, clickable `<div>`/`<span>`/`<tr>`, `transition-all` or `width`/`height` transitions, or raw hex/palette classes, or the five failure modes above. Never ship gradient text, glow, buzzword copy, all caps eyebrow labels, or unproven done claims.

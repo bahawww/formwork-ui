@@ -36,7 +36,7 @@ export function ColorHarmonyRules() {
       <section className="flex flex-col gap-4 rounded-lg squircle-corners border border-(--color-border) bg-(--color-bg) p-5">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
-            <h2 className="m-0 text-[16px] font-medium text-(--color-fg)">
+            <h2 className="m-0 text-[16px] font-title text-(--color-fg)">
               Interactive OKLCH accent harmony (H = {activePreset.hue} deg)
             </h2>
             <p className="m-0 mt-1 max-w-[66ch] text-[13px] text-(--color-muted)">
@@ -105,7 +105,7 @@ export function ColorHarmonyRules() {
 
       <section className="flex flex-col gap-3 rounded-lg squircle-corners border border-(--color-border) bg-(--color-bg) p-5">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 className="m-0 text-[15px] font-medium text-(--color-fg)">60-30-10 color budget</h3>
+          <h3 className="m-0 text-[15px] font-title text-(--color-fg)">60-30-10 color budget</h3>
           <span className="text-[12px] text-(--color-muted)">Never let accents flood structural surfaces</span>
         </div>
 
@@ -126,10 +126,10 @@ export function ColorHarmonyRules() {
         <table className="w-full border-collapse text-[13px]">
           <thead>
             <tr className="border-b border-(--color-border) bg-(--color-surface)">
-              <th className="px-4 py-3 text-start font-normal text-(--color-muted)">Token</th>
-              <th className="px-4 py-3 text-start font-normal text-(--color-muted)">Light (:root)</th>
-              <th className="px-4 py-3 text-start font-normal text-(--color-muted)">Dark (.dark)</th>
-              <th className="px-4 py-3 text-start font-normal text-(--color-muted)">Contrast & role</th>
+              <th className="px-4 py-3 text-start font-body text-(--color-muted)">Token</th>
+              <th className="px-4 py-3 text-start font-body text-(--color-muted)">Light (:root)</th>
+              <th className="px-4 py-3 text-start font-body text-(--color-muted)">Dark (.dark)</th>
+              <th className="px-4 py-3 text-start font-body text-(--color-muted)">Contrast & role</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-(--color-border)">

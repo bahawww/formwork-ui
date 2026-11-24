@@ -91,7 +91,7 @@ export function BarComparisonChart({
       )}
     >
       <div>
-        <h3 className="m-0 text-[15px] font-medium text-(--color-fg)">{title}</h3>
+        <h3 className="m-0 text-[15px] font-title text-(--color-fg)">{title}</h3>
         {subtitle ? <p className="m-0 mt-1 text-[13px] text-(--color-muted)">{subtitle}</p> : null}
       </div>
 

@@ -2,6 +2,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Weight ladder: tune here only. Components use font-body, font-title, font-figure. */
+@theme {
+  --font-weight-body: 500;
+  --font-weight-title: 600;
+  --font-weight-figure: 700;
+}
+
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);

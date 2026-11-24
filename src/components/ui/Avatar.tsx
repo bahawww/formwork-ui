@@ -38,7 +38,7 @@ export function Avatar({ name, src, size = 'md', status, className }: AvatarProp
     <span className={cn('relative inline-flex shrink-0', className)}>
       <span
         className={cn(
-          'inline-flex items-center justify-center overflow-hidden squircle border border-(--color-border) bg-(--color-surface-2) text-(--color-fg) font-normal select-none',
+          'inline-flex items-center justify-center overflow-hidden squircle border border-(--color-border) bg-(--color-surface-2) text-(--color-fg) font-body select-none',
           SIZE_CLASSES[size],
         )}
       >

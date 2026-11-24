@@ -96,7 +96,7 @@ export function AreaTrendChart({
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">
-            <h3 className="m-0 text-[15px] font-medium text-(--color-fg)">{title}</h3>
+            <h3 className="m-0 text-[15px] font-title text-(--color-fg)">{title}</h3>
             {!startAtZero ? (
               <Badge variant="muted" size="sm">
                 Zoomed Y-axis

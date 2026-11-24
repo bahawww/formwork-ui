@@ -36,14 +36,14 @@ export function GraphAntiSlopRules() {
             key={rule.principle}
             className="flex flex-col gap-2 rounded-lg squircle-corners border border-(--color-border) bg-(--color-surface) p-4"
           >
-            <h3 className="m-0 text-[14px] font-medium text-(--color-fg)">{rule.principle}</h3>
+            <h3 className="m-0 text-[14px] font-title text-(--color-fg)">{rule.principle}</h3>
             <p className="m-0 text-[13px] text-(--color-muted)">{rule.spec}</p>
           </div>
         ))}
       </section>
 
       <section className="flex flex-col gap-3 rounded-lg squircle-corners border border-(--color-border) bg-(--color-bg) p-5">
-        <h3 className="m-0 text-[15px] font-medium text-(--color-fg)">Equal-lightness OKLCH data series ramp</h3>
+        <h3 className="m-0 text-[15px] font-title text-(--color-fg)">Equal-lightness OKLCH data series ramp</h3>
         <p className="m-0 text-[13px] text-(--color-muted)">
           Every chart series sits within L 0.54 to 0.58 (light) and L 0.72 to 0.76 (dark) so no single hue visually dominates siblings before focus isolation.
         </p>

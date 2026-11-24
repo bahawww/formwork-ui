@@ -77,7 +77,7 @@ describe('Portable anti-slop-formwork skill package', () => {
       }
 
       expect(exitCode).toBe(1);
-      expect(stderrOutput).toContain('[no-tw-bold]');
+      expect(stderrOutput).toContain('[no-raw-tw-weight]');
       expect(stderrOutput).toContain('[no-tw-raw-palette]');
       expect(stderrOutput).toContain('[no-tw-shadow-slop]');
       expect(stderrOutput).toContain(`[no-${'transition'}-all]`);

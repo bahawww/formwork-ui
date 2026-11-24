@@ -44,7 +44,7 @@ export function StatStrip({ items, ariaLabel = 'Key metrics', className }: StatS
           >
             <div className="min-w-0 flex-1">
               <div className="truncate text-[12px] text-(--color-muted)">{item.label}</div>
-              <div className="mt-1 text-[26px] font-semibold leading-tight text-(--color-fg) tabular">
+              <div className="mt-1 text-[26px] font-figure leading-tight text-(--color-fg) tabular">
                 {item.value}
               </div>
               {item.delta ? (

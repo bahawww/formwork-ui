@@ -5,7 +5,7 @@ import { cn } from '../../lib/cn';
 import { CloseIcon } from '../Icons';
 
 const badgeVariants = cva(
-  'inline-flex items-center squircle font-normal whitespace-nowrap transition-colors duration-(--motion-dur-fast)',
+  'inline-flex items-center squircle font-body whitespace-nowrap transition-colors duration-(--motion-dur-fast)',
   {
     variants: {
       variant: {
