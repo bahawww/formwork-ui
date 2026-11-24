@@ -23,7 +23,7 @@ export function DesignRulesView() {
     <div className="flex flex-col gap-8">
       <header className="flex flex-col gap-4 border-b border-(--color-border) pb-5">
         <div>
-          <h1 className="m-0 text-[28px] leading-tight tracking-tight text-(--color-fg)">
+          <h1 className="m-0 text-[28px] font-semibold leading-tight tracking-tight text-(--color-fg)">
             Design rules &amp; token lab
           </h1>
           <p className="m-0 mt-1.5 max-w-[68ch] text-[14px] text-(--color-muted)">

@@ -45,7 +45,7 @@ export function ActionsAndFormsSection() {
   return (
     <section className="flex flex-col gap-5" aria-label="Actions and form controls">
       <div>
-        <h2 className="m-0 text-[18px] text-(--color-fg)">Actions and form primitives</h2>
+        <h2 className="m-0 text-[18px] font-medium text-(--color-fg)">Actions and form primitives</h2>
         <p className="m-0 mt-1 text-[13px] text-(--color-muted)">
           Monochrome CTAs with width-locked loading, 44px inputs, concentric segmented controls, and tactile springs.
         </p>

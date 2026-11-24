@@ -15,7 +15,7 @@ import { playClickSound, playHoverSound } from '../../lib/sound';
 
 export const buttonVariants = cva(
   [
-    'relative inline-flex items-center justify-center gap-1.5 rounded-md squircle-corners font-normal',
+    'relative inline-flex items-center justify-center gap-1.5 rounded-md squircle-corners font-medium',
     'whitespace-nowrap select-none cursor-pointer border',
     'transition-[background-color,border-color,color,opacity] duration-(--motion-dur-fast) ease-(--motion-ease-out)',
     'motion-reduce:transition-none',

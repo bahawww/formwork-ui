@@ -3,7 +3,7 @@
 Every component, dashboard, chart, and template follows fluid precision and editorial restraint:
 
 - **One signature motion moment per component.** Keep everything else calm.
-- **Regular-weight type only.** Never use bold or heavy weights (`500+`, `font-bold`, `font-semibold`, `font-medium`, `<strong>`, `<b>`). Build hierarchy through scale, neutral contrast (`fg`, `muted`, `subtle`), and 4px-grid space.
+- **Three-weight type ladder.** Plus Jakarta Sans runs at `400` for body, labels, tables, and captions, `500` (`font-medium`) for section titles, card titles, and button labels, and `600` (`font-semibold`) for page titles and KPI figures only. Never use thin weights (`100`-`300`, `font-light`) or heavy weights (`700+`, `font-bold`, `font-extrabold`, `font-black`, `<strong>`, `<b>`). Build the rest of the hierarchy through scale, neutral contrast (`fg`, `muted`, `subtle`), and 4px-grid space.
 - **No em dashes (`U+2014`).** Never write an em dash anywhere in UI copy, metadata, comments, or docs. Use commas, colons, or periods instead.
 - **60-30-10 OKLCH palette & harmony.** Use tinted neutral grounds (`--color-bg`, `--color-surface`) for 60%, ink and 1px hairlines for 30%, and reserve `--color-accent` (`--accent-hue`) for focus rings, selection, active handles, and signature motion. Maintain `Delta L >= 0.50` contrast in both `:root` and `.dark`.
 

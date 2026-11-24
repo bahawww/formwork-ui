@@ -25,7 +25,7 @@ export function ComponentKitShowcase() {
       <header className="flex flex-col gap-3 border-b border-(--color-border) pb-5">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <h1 className="m-0 text-[28px] leading-tight tracking-tight text-(--color-fg)">
+            <h1 className="m-0 text-[28px] font-semibold leading-tight tracking-tight text-(--color-fg)">
               Reusable UI kit
             </h1>
             <p className="m-0 mt-1.5 max-w-[68ch] text-[14px] text-(--color-muted)">

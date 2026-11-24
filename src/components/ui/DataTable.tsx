@@ -109,7 +109,7 @@ export function DataTable<T extends { id: string }>({
   return (
     <section className="flex flex-col gap-3 rounded-lg squircle-corners border border-(--color-border) bg-(--color-bg) p-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <h3 className="m-0 text-[15px] text-(--color-fg)">{title}</h3>
+        <h3 className="m-0 text-[15px] font-medium text-(--color-fg)">{title}</h3>
         <div className="flex flex-wrap items-center gap-2">
           {searchText ? (
             <SearchInput

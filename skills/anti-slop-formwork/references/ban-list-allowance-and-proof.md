@@ -76,7 +76,7 @@ form, for scanning a fresh draft top to bottom:
   labels and controls, 13 meta) and a small radius set (14, 20, 24 in the
   source). Off-scale sizes like a 19px semibold heading appearing from
   nowhere are the tell that the sheet was ignored.
-- Weights follow this skill's stricter rule (regular 400 only, Pillar 6).
+- Weights follow this skill's three-weight ladder (400 body, 500 titles and buttons, 600 page titles and KPI figures, Pillar 6).
   The source allows regular and medium; the principle that transfers is
   not the number, it is that the allowed set is written down and finite.
 - Rule of the sheet: if it is not on the sheet, it does not go in the UI.

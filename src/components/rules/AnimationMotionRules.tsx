@@ -46,7 +46,7 @@ export function AnimationMotionRules() {
       <section className="flex flex-col gap-4 rounded-lg squircle-corners border border-(--color-border) bg-(--color-bg) p-5">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <h2 className="m-0 text-[16px] text-(--color-fg)">Interactive spring physics lab</h2>
+            <h2 className="m-0 text-[16px] font-medium text-(--color-fg)">Interactive spring physics lab</h2>
             <p className="m-0 mt-1 text-[13px] text-(--color-muted)">
               One signature spring moment per component. Triggers interrupt smoothly if reversed mid-flight.
             </p>
@@ -82,14 +82,14 @@ export function AnimationMotionRules() {
 
       <div className="grid gap-4 md:grid-cols-2">
         <section className="flex flex-col gap-3 rounded-lg squircle-corners border border-(--color-border) bg-(--color-surface) p-5">
-          <h3 className="m-0 text-[15px] text-(--color-fg)">Compositor allowlist (GPU 60fps)</h3>
+          <h3 className="m-0 text-[15px] font-medium text-(--color-fg)">Compositor allowlist (GPU 60fps)</h3>
           <p className="m-0 text-[13px] text-(--color-muted)">
             Animate ONLY transform, opacity, clip-path, and filter (plus fast border or color fades). Never animate box dimensions, offsets, or blanket all-property transitions.
           </p>
         </section>
 
         <section className="flex flex-col gap-3 rounded-lg squircle-corners border border-(--color-border) bg-(--color-surface) p-5">
-          <h3 className="m-0 text-[15px] text-(--color-fg)">Width-stable state swaps</h3>
+          <h3 className="m-0 text-[15px] font-medium text-(--color-fg)">Width-stable state swaps</h3>
           <p className="m-0 text-[13px] text-(--color-muted)">
             Mount idle and active states in the same 1x1 CSS grid cell (ClipboardButton, TactileButton loading) and crossfade opacity so neighbors never jitter.
           </p>

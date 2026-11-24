@@ -24,7 +24,7 @@ const BREAKPOINT_ROWS = [
 ] as const;
 
 const FIVE_STATES = [
-  { state: 'Default', rule: 'Calm baseline hierarchy, regular 400 weight, 60-30-10 neutral clarity.' },
+  { state: 'Default', rule: 'Calm baseline hierarchy, 400 body with 500 titles, 60-30-10 neutral clarity.' },
   { state: 'Loading', rule: 'Shape-matched SurfaceSkeleton with aria-busy="true" (never a bare full-page spinner).' },
   { state: 'Empty', rule: 'Explain what is empty, why, and provide a direct 1-click recovery CTA.' },
   { state: 'Error', rule: 'AlertBanner stating What failed + Why + concrete Retry CTA.' },
@@ -52,7 +52,7 @@ export function LayoutDashboardRules() {
       </section>
 
       <section className="flex flex-col gap-3 rounded-lg squircle-corners border border-(--color-border) bg-(--color-bg) p-5">
-        <h3 className="m-0 text-[15px] text-(--color-fg)">12-column asymmetric bento blueprint</h3>
+        <h3 className="m-0 text-[15px] font-medium text-(--color-fg)">12-column asymmetric bento blueprint</h3>
         <p className="m-0 text-[13px] text-(--color-muted)">
           Give primary trend telemetry 8 columns and complementary breakdown 4 columns rather than uniform equal-box grids.
         </p>

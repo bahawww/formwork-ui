@@ -13,7 +13,7 @@ export function RadiusAndBlurSection() {
     <section className="flex flex-col gap-5" aria-label="Corner radius and frosted blur">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h2 className="m-0 text-[18px] text-(--color-fg)">Concentric corners and frosted glass</h2>
+          <h2 className="m-0 text-[18px] font-medium text-(--color-fg)">Concentric corners and frosted glass</h2>
           <p className="m-0 mt-1 max-w-[66ch] text-[13px] text-(--color-muted)">
             Nested radii follow R_inner = max(4px, R_outer - padding - border) so inner elements track outer frames with equal diagonal air.
           </p>

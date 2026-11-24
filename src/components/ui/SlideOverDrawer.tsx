@@ -76,7 +76,7 @@ export function SlideOverDrawer({
           >
             <div className="flex items-start justify-between gap-3 border-b border-(--color-border) pb-4">
               <div className="min-w-0 flex-1">
-                <h2 id={titleId} className="m-0 text-[16px] text-(--color-fg)">
+                <h2 id={titleId} className="m-0 text-[16px] font-medium text-(--color-fg)">
                   {title}
                 </h2>
                 {description ? (

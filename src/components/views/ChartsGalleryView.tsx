@@ -57,7 +57,7 @@ export function ChartsGalleryView() {
     <div className="flex flex-col gap-8">
       <header className="flex flex-wrap items-end justify-between gap-4 border-b border-(--color-border) pb-5">
         <div>
-          <h1 className="m-0 text-[28px] leading-tight tracking-tight text-(--color-fg)">
+          <h1 className="m-0 text-[28px] font-semibold leading-tight tracking-tight text-(--color-fg)">
             Anti-slop graph system
           </h1>
           <p className="m-0 mt-1.5 max-w-[68ch] text-[14px] text-(--color-muted)">
@@ -131,7 +131,7 @@ export function ChartsGalleryView() {
 
       <section className="flex flex-col gap-3" aria-label="Small multiples sparkline strip">
         <div>
-          <h2 className="m-0 text-[16px] text-(--color-fg)">Small multiples (Sparkline grid)</h2>
+          <h2 className="m-0 text-[16px] font-medium text-(--color-fg)">Small multiples (Sparkline grid)</h2>
           <p className="m-0 mt-1 text-[13px] text-(--color-muted)">
             Compact trend indicators share consistent vertical bounds inside tabular service cells.
           </p>
